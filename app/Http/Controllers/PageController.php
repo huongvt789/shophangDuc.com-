@@ -16,7 +16,8 @@ class PageController extends Controller
 	}
 	public function trangchu(){
     $theloai=Category::all();
-    return view('pages.trangchu',['theloai'=>$theloai]);
+    $product=Product::all();
+    return view('pages.trangchu',['theloai'=>$theloai,'product'=>$product]);
 	}
 	public function getLogin(){
 		return view('pages.loginfont');
