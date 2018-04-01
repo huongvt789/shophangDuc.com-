@@ -145,4 +145,7 @@ Route::get('xoa-san-pham/{id}',['as'=>'xoasanpham','uses'=>'PageController@xoasa
 //Checkout:
 Route::get('checkout','CheckoutController@getCheck');
 Route::post('formvalidate','CheckoutController@getValidate');
+
+// Generate dât to PDF
+Route::get('getPDF','PDFController@getPDF');
 Auth::routes();

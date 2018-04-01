@@ -23,8 +23,8 @@
                         </button>
                         <ul class="dropdown-menu pull-right" role="menu">
                             <li>
-                                <a href="#">
-                                    <i class="icon-bell"></i> Action</a>
+                                <a href="getPDF">
+                                    <i class="icon-bell"></i> Export PDF</a>
                             </li>
                             <li>
                                 <a href="#">
