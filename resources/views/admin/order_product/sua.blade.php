@@ -86,7 +86,7 @@
                                             <select class="table-group-action-input form-control input-medium" name="id_customer">
                                                @foreach($khachhang as $tl)
                                                 <option>
-                                                    {{$tl->name}}
+                                                    {{$tl->id}}
                                                 </option>
                                                 @endforeach
                                             </select>

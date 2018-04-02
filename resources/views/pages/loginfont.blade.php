@@ -29,7 +29,8 @@
 								</div>
 
 								<div class="col_full nobottommargin action">
-									<button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" type="submit" value="login">Đăng nhập</button>
+									<br>
+									<input class ="nho" type="button" onclick="confirm()" value="Đăng nhập">
 									<a href="#" onclick="showRecoverPasswordForm();return false;" class="">Quên mật khẩu?</a>
 								</div>
 
@@ -98,4 +99,19 @@
 		</div>
 	</div>
 </section>
+<script>
+    function confirm() {
+        $.ajax({
+            url: '{{''}}',
+            type: 'submit',
+            success: function (data) {
+                    alert('Bạn đã đặt hành thành công');
+                    reloadPage();
+            }
+        });
+    }
+    function reloadPage() {
+        location.reload();
+    }
+</script>
 @endsection
