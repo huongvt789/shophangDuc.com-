@@ -30,10 +30,16 @@
 
 								<div class="col_full nobottommargin action">
 									<br>
-									<input class ="nho" type="button" onclick="confirm()" value="Đăng nhập">
+									<a class="dangnhap" href="http://localhost/shophangDuc.com-/public/trangchu">Đăng nhập</a>
 									<a href="#" onclick="showRecoverPasswordForm();return false;" class="">Quên mật khẩu?</a>
 								</div>
-
+								<style>
+								a.dangnhap {
+								    border: 1px solid green;
+								    background-color: #098E08;
+								    color: white;
+								}
+								</style>
 								<!--</form>-->
 								</form>
 							</div>

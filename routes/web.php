@@ -28,6 +28,8 @@ Route::group(['prefix'=>'admin'],function(){
 
 		Route::get('them','CategoryController@getThem');
 		Route::post('them','CategoryController@postThem');
+
+		Route::get('xoa/{id}','CategoryController@getXoa');
 	});
 	Route::group(['prefix'=>'contact'],function(){
 		Route::get('danhsach','ContactController@getDanhsach');
@@ -137,7 +139,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // facebook
 Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider');
-Route::get('shophangDuc.com.vn/public', 'Auth\LoginController@handleProviderCallback');
+Route::get('shophangDuc.com-/public', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('muahang/{id}/{tensanpham}','PageController@muahang');
 Route::get('gio-hang',['as'=>'giohang','uses'=>'PageController@giohang']);

@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'http://localhost/shophangDuc.com.vn/public/admin/product/danhsach';
+    protected $redirectTo = 'http://localhost/shophangDuc.com-/public/admin/product/danhsach';
 
     /**
      * Create a new controller instance.
@@ -62,7 +62,7 @@ class LoginController extends Controller
 
         Auth::login($authUser, true);
 
-        return redirect()->route('home');
+        return redirect('localhost/shophangDuc.com-/public/trangchu');
     }
 
     public function findOrCreateUser($facebookUser)

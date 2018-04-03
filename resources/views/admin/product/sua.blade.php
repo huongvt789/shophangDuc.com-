@@ -5,7 +5,7 @@
     <style type="text/css">
         .actions.btn-set {
         position: relative;
-        left: 746px;
+        left: 628px;
         bottom: 14px;
         /* border: 2px solid #cdcddb; */
         width: 300px;
@@ -156,26 +156,11 @@
                                     </div>
                                     <div class="form-group last password-strength">
                                         <label class="control-label col-md-2">Is_active</label>
-                                        <div class="acitve">
-                                            <lable class="radio-inline">
-                                                <input name="active" value="0"
-                                                @if($product->is_active==0) {{"checked"}}
-                                                @endif
-                                                type="radio">Unvisible
-                                            </lable>
-                                            <lable class="radio-inline">
-                                                <input name="active" value="1"
-                                                @if($product->is_active==1) {{"checked"}}
-                                                @endif
-                                                type="radio">Visible
-                                            </lable>
+                                        <div class="col-md-9">
+                                            <div class="input-icon right">
+                                                <i class="icon-exclamation-sign"></i>
+                                                <input type="text" class="form-control" name="is_active" value="{{$product->is_active}}"> </div>
                                         </div>
-                                        <style>
-                                        .acitve {
-                                                position: relative;
-                                                right: -112px;
-                                            }
-                                        </style>
                                     </div>
                                     <br>
                                         <div class="actions btn-set">

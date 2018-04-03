@@ -96,12 +96,7 @@
                                     <textarea class="form-control" name="cate_note"></textarea>
                                 </div>
                             </div>
-                            <div class="form-group last password-strength">
-                                <label class="control-label col-md-2">is_partner</label>
-                                <div class="col-md-9">
-                                   <input type="text"name="id_partner">
-                                </div>
-                            </div>
+                        
                             <div class="form-group last password-strength">
                                 <label class="control-label col-md-2">is_active</label>
                                 <div class="col-md-9">

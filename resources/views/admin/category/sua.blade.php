@@ -5,7 +5,7 @@
     <style type="text/css">
         .actions.btn-set {
         position: relative;
-        left: 746px;
+        left: 628px;
         bottom: 14px;
         /* border: 2px solid #cdcddb; */
         width: 300px;

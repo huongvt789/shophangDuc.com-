@@ -39,7 +39,7 @@ return [
     // lên trang develop.facebook.com/dangnhapfacebook/caidat. cho đường dẫn này vào
     'client_id' => '368114370263860',
     'client_secret' => '17094c1175b5b66a2c013619fda0ee62',
-    'redirect' => 'shophangDuc.com.vn/public/',
+    'redirect' => 'localhost/shophangDuc.com-/public/trangchu',
     ],
 
 ];

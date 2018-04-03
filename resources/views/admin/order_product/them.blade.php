@@ -5,7 +5,7 @@
     <style type="text/css">
         .actions.btn-set {
         position: relative;
-        left: 746px;
+        left: 628px;
         bottom: 14px;
         /* border: 2px solid #cdcddb; */
         width: 300px;
@@ -86,7 +86,7 @@
                                             <select class="table-group-action-input form-control input-medium" name="id_customer">
                                                @foreach($khachhang as $tl)
                                                 <option>
-                                                    {{$tl->name}}
+                                                    {{$tl->id}}
                                                 </option>
                                                 @endforeach
                                             </select>

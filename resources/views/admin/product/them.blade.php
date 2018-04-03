@@ -144,23 +144,16 @@
                                                 <input type="text" class="form-control" name="discount" id="username2_input"> </div>
                                         </div>
                                     </div>
-                                    <div class="form-group last password-strength">
+                                     <div class="form-group">
                                         <label class="control-label col-md-2">Is_active</label>
-                                        <div class="acitve">
-                                            <lable class="radio-inline">
-                                                <input type="radio" name="active" value="0" chekced="">Visible
-                                            </lable>
-                                            <lable class="radio-inline">
-                                                <input type="radio" name="noactive" value="1">Invisible
-                                            </lable>
+                                        <div class="col-md-9">
+                                            <div class="input-icon right">
+                                                <i class="icon-exclamation-sign"></i>
+                                                <input type="text" class="form-control" placeholder="Nhập 1 là có, nhập 0 la yes" name="is_active" id="username2_input"> </div>
                                         </div>
-                                        <style>
-                                        .acitve {
-                                                position: relative;
-                                                right: -112px;
-                                            }
-                                        </style>
                                     </div>
+                                    
+                
                                     <br>
                                         <div class="actions btn-set">
                                         <button type="button" name="back" class="btn btn-secondary-outline">

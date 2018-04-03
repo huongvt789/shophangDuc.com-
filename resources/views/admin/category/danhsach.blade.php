@@ -49,6 +49,7 @@
                     <th width="10%"> ID </th>
                     <th width="15%"> Name </th>
                     <th width="20%"> Description</th>
+                    <th width="15%">Id_Partner</th>
                     <th width="10%"> is_active </th>
                     <th width="15%"> Created_at </th>
                     <th width="15%"> Actions </th>
@@ -64,6 +65,16 @@
                     </td>
                     <td>
                         {{$tl->cate_note}}
+                    </td>
+                     <td>
+                        <select name="partner" class="form-control form-filter input-sm">
+                            @foreach($partner as $thel)
+                            <option
+                            @if($tl->id_partner==$thel->id){{"selected"}}
+                            @endif
+                            value="{{$thel->id}}">{{$thel->id}}</option>
+                            @endforeach
+                        </select>
                     </td>
                     <td>
                         {{$tl->is_active}}

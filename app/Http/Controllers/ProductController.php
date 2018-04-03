@@ -35,6 +35,7 @@ class ProductController extends Controller
         $product->content=$request->ten;
         $product->price=$request->price;
         $product->discount=$request->discount;
+        $product->is_active=$request->is_active;
         if($request->hasFile('image'))
         {
             $file=$request->file('image');
@@ -82,6 +83,7 @@ class ProductController extends Controller
         $product->content=$request->ten;
         $product->price=$request->price;
         $product->discount=$request->discount;
+        $product->is_active=$request->is_active;
         if($request->hasFile('image'))
         {
             $file=$request->file('image');
